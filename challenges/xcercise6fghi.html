@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exercise 6f, 6g, 6h</title>
+</head>
+
+<body>
+  <script>
+    const coinToss = Math.random(); // 6f
+    let result;                     // 6h
+
+    if (coinToss < 0.5) {           // 6g
+      result = "heads";
+    } else {
+      result = "tails";
+    }
+
+    console.log(result);            // shows heads or tails
+
+    const guess = 'heads';
+    let result1 = Math.random()<0.5 ? 'heads':'Tails';
+    if(guess === result1){
+      console.log(`You win`)
+    }else{
+      console.log(`You lose`);
+    }
+
+  </script>
+</body>
+
+</html>
