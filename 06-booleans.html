@@ -1,86 +1,117 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>
-        Booleans
-      </title>
-    </head>
+<!DOCTYPE html>
+<html>
 
-    <body>
-      <script>/*
-       true
-       false
+<head>
+  <title>
+    Booleans
+  </title>
+</head>
 
-       console.log(3>5);
-       console.log(3<5);
-       console.log(3>5-5);//according to the order of operators '-' gets first priority to solved and comparision opeator('>') gets the least priority  so the sol solves : 5-5 and then 3>0
+<body>
+  <script>/*
+ true
+ false
+
+ console.log(3>5);
+ console.log(3<5);
+ console.log(3>5-5);//according to the order of operators '-' gets first priority to solved and comparision opeator('>') gets the least priority  so the sol solves : 5-5 and then 3>0
 
 
-       if(true) {
-        console.log('hello');
-       } else{
-        console.log('else')
-       }//above the if stmt code is runned cause its true
+ if(true) {
+  console.log('hello');
+ } else{
+  console.log('else')
+ }//above the if stmt code is runned cause its true
 
-       if(false) {
-        console.log('hello');
-       } else{
-        console.log('else')
-       }//above else stml code is runned because if stmt is false
-      if(30 >= 16){
-        console.log(`you can drive`);
+ if(false) {
+  console.log('hello');
+ } else{
+  console.log('else')
+ }//above else stml code is runned because if stmt is false
+if(30 >= 16){
+  console.log(`you can drive`);
 
-      } else{
-        console.log(`you cant drive`);
-      }
+} else{
+  console.log(`you cant drive`);
+}
 
-      if(12 >= 16){
-        console.log(`you can drive`);
-      } else{
-        console.log(`you cant drive`);
-      }
-      const h = 15;
-      if(h >= 16){
-        console.log(`you can drive`);
-      } else if(h>=14){
-         console.log(`almost there!`);
-      } else{
-        console.log(`you cant drive`);
-      }
-      
+if(12 >= 16){
+  console.log(`you can drive`);
+} else{
+  console.log(`you cant drive`);
+}
+const h = 15;
+if(h >= 16){
+  console.log(`you can drive`);
+} else if(h>=14){
+   console.log(`almost there!`);
+} else{
+  console.log(`you cant drive`);
+}
+ 
 
-      //logical AND 
-      console.log(true && false);
-      console.log(true && true);
-      console.log(false && true);
-      console.log(false && false);
+//logical AND 
+console.log(true && false);
+console.log(true && true);
+console.log(false && true);
+console.log(false && false);
 
-      //logical OR
-      console.log(true || false);
-      console.log(false || false);
-      console.log(false|| true);
-      console.log(true || true);
+//logical OR
+console.log(true || false);
+console.log(false || false);
+console.log(false|| true);
+console.log(true || true);
 
-      //logical NOT
-      console.log(!true);//opposite prints
-      console.log(!false);
-      */
+//logical NOT
+console.log(!true);//opposite prints
+console.log(!false);
+*/
+  /*
+    if (5) {
+      console.log(`truthy`);
+    }
 
-       if(5){
-        console.log(`truthy`);
-       }
 
-       
-       if(0){
-        console.log(`truthy`);
-       }
+    if (0) {
+      console.log(`truthy`);
+    }
 
-       const cartQuantity = 5;
-       if(cartQuantity){
-        console.log(`cart has products`);
-       }
+    const cartQuantity = 5;
+    if (cartQuantity) {
+      console.log(`cart has products`);
+    }
 
-       console.log(!0);
-      </script>
-    </body>
-  </html> 
+    console.log(!0);
+    //falsy values [false,0,NaN,undefined,'',null]
+    console.log('text'/5);//NaN
+    let variable1;
+    console.log(variable1)//undefined */
+    
+
+    //few shortcuts for if stmts
+    //1.ternary operators (? and :)
+    true? 'truthy':'falsy';
+    //adv of ternary is that we can save them in a variable
+    const result = true? 'truthy':'falsy';
+    console.log(result);//output:truthy
+    
+    
+    const result1 = 0 ? 'truthy':'falsy';
+    console.log(result1);//OutPut:falsy
+
+
+  //2.Guard operator(&&)
+  false && console.log('hello');//output:no output ,beacuse it follows the AND rules and if the 1st both are true then only it allows to print if not it doesnt print it guards the console.
+
+ const message = 5 && 'hello';
+ console.log(message);//output:hello simialar advantage as ternary
+
+ //3.default operator(||)
+ const currency = undefined || 'USD';
+ console.log(currency);
+
+
+  </script>
+</body>
+
+</html>
