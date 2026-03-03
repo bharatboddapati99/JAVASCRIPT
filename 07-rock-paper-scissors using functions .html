@@ -10,17 +10,8 @@
 <body>
   <p>Rock Paper Scissors</p>
   <button onclick="
-       const randomNumber = Math.random();
-       let computerMove = '';
-       if(randomNumber >= 0 && randomNumber < 1/3){
-         computerMove = `rock`;
-       }
-       else if(randomNumber >= 1/3 && randomNumber < 2/3){
-         computerMove = `paper`;
-      }
-      else if(randomNumber >= 2/3 && randomNumber < 1){
-         computerMove = `scissors`;
-      }
+      
+     const computerMove= pickComputerMove();
       
       let result = '';
       if(computerMove === `rock`){
@@ -39,18 +30,8 @@
 
 
   <button onclick="
-          const randomNumber = Math.random();
-          let computerMove = '';
-          if(randomNumber >= 0 && randomNumber < 1/3){
-            computerMove = `rock`;
-          }
-          else if(randomNumber >= 1/3 && randomNumber < 2/3){
-            computerMove = `paper`;
-          }
-          else if(randomNumber >= 2/3 && randomNumber < 1){
-            computerMove = `scissors`;
-          }
-          
+         
+        const computerMove = pickComputerMove();
           let result = '';
           if(computerMove === `rock`){
             result ='you win.'
@@ -68,18 +49,7 @@
 
 
   <button onclick="
-          const randomNumber = Math.random();
-          let computerMove = '';
-          if(randomNumber >= 0 && randomNumber < 1/3){
-            computerMove = `rock`;
-          }
-          else if(randomNumber >= 1/3 && randomNumber < 2/3){
-            computerMove = `paper`;
-          }
-          else if(randomNumber >= 2/3 && randomNumber < 1){
-            computerMove = `scissors`;
-          }
-          
+   const computerMove=pickComputerMove();
           let result = '';
           if(computerMove === `rock`){
             result ='you lose.'
@@ -97,9 +67,12 @@
 
 
   <script>
+
+
     function pickComputerMove() {
       const randomNumber = Math.random();
       let computerMove = '';
+
       if (randomNumber >= 0 && randomNumber < 1 / 3) {
         computerMove = `rock`;
       }
@@ -109,6 +82,7 @@
       else if (randomNumber >= 2 / 3 && randomNumber < 1) {
         computerMove = `scissors`;
       }
+      return computerMove;
     }
   </script>
 </body>
