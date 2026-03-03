@@ -9,13 +9,24 @@
 
 <body>
   <script>
+    /*
     function function1(){
       console.log(`hello`);
       console.log(2+2);
 
     }
 
-    function1();
+    function1();*/
+
+    //parameters
+    function calculateTax(cost,taxPercent=0.1){//we can call more than one parameter
+      console.log(cost * taxPercent);
+
+    }//the above code does not run beacuse we had just created a function
+    calculateTax(2000,0.1);//calling the function
+    calculateTax(5000);
+    
+    
   </script>
 </body>
 
