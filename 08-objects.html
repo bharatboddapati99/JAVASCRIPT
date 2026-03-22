@@ -25,7 +25,7 @@
      delete product.name;
      console.log(product);*/
 
-     const product2 = {
+    /* const product2 = {
       name:'shirt',
       rating:{
         stars : 4.5,
@@ -47,7 +47,25 @@
      console.log(JSON.parse(jsonString));
     
      
-     //using bracket notation is helpful
+     //using bracket notation is helpful */
+     console.log('hello'.length);
+     console.log('hello'.toUpperCase());
+
+     const object1={
+      message : 'hello'
+     };
+
+     const object2=object1;//reference
+
+     object1.message = 'Good Job!';
+     console.log(object1); //here objects have an important property that is REFERENCE if you observe we have accesed the message property and changed its value though it is in a variable created by CONST which doesnt allow to access or changes.
+     console.log(object2);
+
+     const object3 = {
+      message : 'Good Job!'
+     };
+     console.log(object3 === object1)//here obj3 and obj1 have same value good job! but still it prints false beacuse objects are references. obj3 reference is may be different that is why it prints false
+     console.log(object2 === object1);//it prints true because object1 and object2 contains same reference
   </script>
 </body>
 
