@@ -66,6 +66,30 @@
      };
      console.log(object3 === object1)//here obj3 and obj1 have same value good job! but still it prints false beacuse objects are references. obj3 reference is may be different that is why it prints false
      console.log(object2 === object1);//it prints true because object1 and object2 contains same reference
+
+     const object4 = {
+      message : 'Good Job!',
+      price : 799
+     };
+     //const message = object4.message;
+     const{message,price}=object4;
+     console.log(message);
+     console.log(price);
+
+
+     const object5 = {
+     // message:message(below code does the same thing)
+      message,//shorthand
+     /* method : function function1(){
+        console.log('method');
+     } (below code does the same thing)*/
+      //shorthand Method
+      method(){
+        console.log('method');
+      }
+     };
+     console.log(object5);
+     object5.method();
   </script>
 </body>
 
